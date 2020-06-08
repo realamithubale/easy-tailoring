@@ -13,27 +13,9 @@ public class Customer extends AuditModel {
             initialValue = 1000
     )
     private Long id;
-
     private String name;
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getAddress() {
-        return address;
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
-    }
-
-    private String mobile1;
-
+    private String gender;
+    private String mobileNumber;
     @Column(columnDefinition = "text")
     private String address;
 
@@ -45,9 +27,38 @@ public class Customer extends AuditModel {
         this.id = id;
     }
 
+    public String getName() {
+        return name;
+    }
 
-    public String getMobile1() { return mobile1; }
+    public void setName(String name) {
+        this.name = name;
+    }
 
-    public void setMobile1(String mobile1) { this.mobile1 = mobile1; }
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+
+    public String getMobileNumber() {
+        return mobileNumber;
+    }
+
+    public void setMobileNumber(String mobileNumber) {
+        this.mobileNumber = mobileNumber;
+    }
+
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
 
 }
